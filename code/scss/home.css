@@ -1,0 +1,431 @@
+@import url("https://fonts.googleapis.com/css2?family=Sriracha&family=Ubuntu:wght@400;700&display=swap");
+body {
+  padding-top: 2rem;
+  margin: 0;
+  padding: 0;
+}
+
+.custom-nav {
+  font-family: "Sriracha", cursive;
+}
+
+.custom-nav .navbar-brand img {
+  width: 150px;
+  height: 40px;
+}
+
+.custom-nav #navbarScroll .navbar-nav .nav-item .nav-link {
+  color: #d2bb99;
+  font-weight: 700;
+  margin-left: 1em;
+  border-radius: 0.5em;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s color ease;
+  transition: 0.5s color ease;
+}
+
+.custom-nav #navbarScroll .navbar-nav .nav-item .nav-link:hover {
+  color: #b3ff00;
+  border-radius: 0.5em;
+  border: 1px solid #d2bb99;
+  background-color: #d2bb99;
+}
+
+.paralax {
+  height: 800px;
+  background-image: url("../../img/background/01.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+}
+
+.paralax h2 {
+  color: #483525;
+  font-family: "Sriracha", cursive;
+  font-size: 3rem;
+}
+
+.paralax h4 {
+  color: #483525;
+  font-family: "Sriracha", cursive;
+  font-size: 2rem;
+}
+
+.paralax h1 {
+  color: #483525;
+  font-family: "Sriracha", cursive;
+  font-size: 4rem;
+}
+
+.header a {
+  display: inline-block;
+  color: #483525;
+  background-color: #d2bb99;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-family: "Sriracha", cursive;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.header a:hover {
+  color: #d2bb99;
+  border: 1px solid #d2bb99;
+  background-color: #483525;
+}
+
+.katalog {
+  display: -ms-grid;
+  display: grid;
+  grid-template-areas:
+    "produk-edukasi produk-edukasi alat-ibadah"
+    "pakaian pakaian alat-dapur"
+    "herbal kecantikan kecantikan";
+  gap: 10px;
+}
+
+.katalog .produk-edukasi {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: produk-edukasi;
+  min-height: 30%;
+  background-color: aqua;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  cursor: pointer;
+  border-radius: 1em;
+  background-image: url(../../img/katalog/01.jpg);
+  background-size: cover;
+  margin-top: 5rem;
+}
+
+.katalog .alat-ibadah {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: alat-ibadah;
+  min-height: 150px;
+  background-color: salmon;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  cursor: pointer;
+  border-radius: 1em;
+  background-image: url(../../img/katalog/02.jpg);
+  background-size: cover;
+  margin-top: 5rem;
+}
+
+.katalog .pakaian {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: pakaian;
+  min-height: 200px;
+  background-color: aquamarine;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  cursor: pointer;
+  border-radius: 1em;
+  background-image: url(../../img/katalog/03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.katalog .alat-dapur {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: alat-dapur;
+  min-height: 200px;
+  background-color: bisque;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  cursor: pointer;
+  border-radius: 1em;
+  background-image: url(../../img/katalog/04.jpg);
+  background-size: cover;
+}
+
+.katalog .kecantikan {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: kecantikan;
+  min-height: 100px;
+  background-color: black;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  cursor: pointer;
+  border-radius: 1em;
+  background-image: url(../../img/katalog/06.jpg);
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+
+.katalog .herbal {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: herbal;
+  min-height: 100px;
+  background-color: brown;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+  cursor: pointer;
+  border-radius: 1em;
+  background-image: url(../../img/katalog/05.jpg);
+  background-size: cover;
+  margin-bottom: 3rem;
+}
+
+.mengapa-kami h2 {
+  color: #d2bb99;
+  font-family: "Sriracha", cursive;
+  margin-top: 3rem;
+}
+
+.custom-produk {
+  margin-bottom: 2rem;
+}
+
+.custom-produk h2 {
+  color: #d2bb99;
+  font-family: "Sriracha", cursive;
+  margin-top: 3rem;
+}
+
+.custom-produk a {
+  display: inline-block;
+  color: #483525;
+  background-color: #d2bb99;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-family: "Sriracha", cursive;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-produk a:hover {
+  color: #d2bb99;
+  border: 1px solid #d2bb99;
+  background-color: #483525;
+}
+
+.custom-produk .btn {
+  display: inline-block;
+  color: #483525;
+  background-color: #d2bb99;
+  border-radius: 0.5em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  font-family: "Sriracha", cursive;
+  border: 1px solid transparent;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.custom-produk .btn:hover {
+  color: #d2bb99;
+  border: 1px solid #d2bb99;
+  background-color: #483525;
+}
+
+.kontak {
+  height: 250px;
+  background-image: url(../../img/kontak/01.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: 0 0;
+  margin-top: 5rem;
+  padding: 3rem;
+}
+
+.kontak h6 {
+  font-family: "Ubuntu", sans-serif;
+  color: yellow;
+}
+
+.kontak h6:hover {
+  color: #c49e82;
+}
+
+.kontak h6 a {
+  font-family: "Ubuntu", sans-serif;
+  color: yellow;
+}
+
+.kontak h6 a:hover {
+  color: #c49e82;
+}
+
+.kontak a {
+  font-family: "Ubuntu", sans-serif;
+  color: yellow;
+  text-decoration: none;
+}
+
+.kontak a:hover {
+  color: #c49e82;
+}
+
+.kontak a h6 {
+  font-family: "Ubuntu", sans-serif;
+  color: yellow;
+}
+
+.kontak a h6:hover {
+  color: #c49e82;
+}
+
+.kontak ul li,
+.kontak ul a {
+  font-family: "Ubuntu", sans-serif;
+  color: yellow;
+  list-style: none;
+  text-decoration: none;
+}
+
+.kontak ul li:hover,
+.kontak ul a:hover {
+  color: #c49e82;
+}
+
+.footer {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+@media (max-width: 480px) {
+  .paralax {
+    height: 700px;
+    background-image: url("../../img/background/05.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+  }
+  .paralax h2 {
+    color: #483525;
+    font-family: "Sriracha", cursive;
+    font-size: 2rem;
+  }
+  .paralax h4 {
+    color: #483525;
+    font-family: "Sriracha", cursive;
+    font-size: 1.5rem;
+  }
+  .paralax h1 {
+    color: #483525;
+    font-family: "Sriracha", cursive;
+    font-size: 2.5rem;
+  }
+  .paralax img {
+    width: 30%;
+  }
+  .custom-produk h2 {
+    font-size: 130%;
+    margin-top: 1rem;
+  }
+  .custom-produk h4 {
+    font-family: "Ubuntu", sans-serif;
+    color: #483525;
+    font-size: 100%;
+  }
+  .custom-produk a {
+    display: inline-block;
+    color: #483525;
+    background-color: #d2bb99;
+    border-radius: 0.5em;
+    padding: 0.5em 0.5em;
+    text-decoration: none;
+    font-size: 70%;
+    font-family: "Sriracha", cursive;
+    border: 1px solid transparent;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+  }
+  .custom-produk a:hover {
+    color: #d2bb99;
+    border: 1px solid #d2bb99;
+    background-color: #483525;
+  }
+  .custom-produk .modal img {
+    width: 50%;
+  }
+  .custom-produk .modal td,
+  .custom-produk .modal th {
+    font-size: 80%;
+  }
+  .kontak {
+    height: 110px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: 0 0;
+    margin-top: 2rem;
+    padding: 1rem;
+  }
+  .kontak h6 {
+    font-family: "Ubuntu", sans-serif;
+    color: yellow;
+    font-size: 30%;
+  }
+  .kontak ul li {
+    font-family: "Ubuntu", sans-serif;
+    color: yellow;
+    list-style: none;
+    font-size: 30%;
+  }
+  .footer {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+  }
+  .footer h6 {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .custom-produk .modal img {
+    width: 100%;
+  }
+  .custom-produk .modal td,
+  .custom-produk .modal th {
+    font-size: 80%;
+  }
+}
+/*# sourceMappingURL=home.css.map */
